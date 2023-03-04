@@ -17,7 +17,7 @@ abradl11:hydra0 ~/cs102> mv bowling.cpp bowling-lab/
 Download the tests into the directory
 
 ```bash
-curl https://raw.githubusercontent.com/seeker-3/curl/main/cs102-bowling-tests.zip -o cs102-bowling-tests.zip
+curl https://raw.githubusercontent.com/seeker-3/cs102-resources/main/tests/cs102-bowling-tests.zip -o cs102-bowling-tests.zip
 ```
 
 Your directory should look like this
