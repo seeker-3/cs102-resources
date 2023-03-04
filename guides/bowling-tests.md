@@ -5,13 +5,13 @@ NOTE: This guide is for the lab machines, if you are on mac or WSL you can follo
 Make a new directory
 
 ```bash
-abradl11:hydra0 ~/cs102> mkdir bowling-lab
+abradl11:hydra0 ~/cs102› mkdir bowling-lab
 ```
 
 Move your `bowling.cpp` file into the new directory (or just create it in the directory if don't have one yet)
 
 ```bash
-abradl11:hydra0 ~/cs102> mv bowling.cpp bowling-lab/
+abradl11:hydra0 ~/cs102› mv bowling.cpp bowling-lab/
 ```
 
 Download the tests into the directory
@@ -23,21 +23,21 @@ curl https://raw.githubusercontent.com/seeker-3/cs102-resources/main/tests/cs102
 Your directory should look like this
 
 ```bash
-abradl11:hydra0 ~/cs102/bowling-lab> ls
+abradl11:hydra0 ~/cs102/bowling-lab› ls
 bowling.cpp  bowling-tests.zip
 ```
 
 Unzip the tests
 
 ```bash
-abradl11:hydra0 ~/cs102/bowling-lab> unzip bowling-tests.zip
+abradl11:hydra0 ~/cs102/bowling-lab› unzip bowling-tests.zip
 *lots of output*
 ```
 
 And your directory should look like this
 
 ```bash
-abradl11:hydra0 ~/cs102/bowling-lab> ls
+abradl11:hydra0 ~/cs102/bowling-lab› ls
 bowling.cpp  bowling-tests.zip  scripts/ tests/
 ```
 
@@ -46,7 +46,7 @@ Run the tests like this
 NOTE: the script will recompile your program each time you run it, so you don't need to recompile it yourself.
 
 ```bash
-abradl11:hydra0 ~/cs102/bowling-lab> bash scripts/test.bash bowling.cpp
+abradl11:hydra0 ~/cs102/bowling-lab› bash scripts/test.bash bowling.cpp
 PASSED: 000-none.txt
 FAILED: 010-ones.txt
 
@@ -90,7 +90,7 @@ The tests use the `diff` command to compare the outputs between yours and mine. 
 Here's what the output should look like if all the tests pass
 
 ```bash
-abradl11:hydra0 ~/cs102/bowling-lab> bash scripts/test.bash bowling.cpp
+abradl11:hydra0 ~/cs102/bowling-lab› bash scripts/test.bash bowling.cpp
 PASSED: 000-none.txt
 PASSED: 010-ones.txt
 PASSED: 011-zeros.txt
@@ -111,5 +111,3 @@ PASSED: 060-canvas1.txt
 PASSED: 061-canvas2.txt
 PASSED: 070-frame-9.txt
 ```
-
-Good luck!
