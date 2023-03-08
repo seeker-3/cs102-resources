@@ -2,6 +2,8 @@
 
 NOTE: This guide is for the lab machines, if you are on mac or WSL you can follow these same steps and test locally. As always, make sure your code works on the lab machines before submitting. If you are on WSL, you may need to install the `zip` and `unzip` utilities with `sudo apt install zip unzip`
 
+## Download the Tests
+
 Make a new directory
 
 ```bash
@@ -40,6 +42,8 @@ And your directory should look like this
 abradl11:hydra0 ~/cs102/bowling-lab› ls
 bowling.cpp  bowling-tests.zip  scripts/ tests/
 ```
+
+## Run the Tests
 
 Run the tests like this
 
@@ -91,26 +95,28 @@ Here's what the output should look like if all the tests pass
 
 ```bash
 abradl11:hydra0 ~/cs102/bowling-lab› bash scripts/test.bash bowling.cpp
-PASSED: 000-none.txt
-PASSED: 010-ones.txt
-PASSED: 011-zeros.txt
-PASSED: 020-first-strikes.txt
-PASSED: 021-first-spares.txt
-PASSED: 022-last-strikes.txt
-PASSED: 023-last-spares.txt
-PASSED: 024-all-strikes.txt
-PASSED: 025-all-spares.txt
-PASSED: 026-all-spares.txt
-PASSED: 030-clears.txt
-PASSED: 040-duplicate.txt
-PASSED: 041-duplicate.txt
-PASSED: 050-best-worst.txt
-PASSED: 051-duplicate-best-worst.txt
-PASSED: 052-max-min.txt
-PASSED: 060-canvas1.txt
-PASSED: 061-canvas2.txt
-PASSED: 070-frame-9.txt
+000-none.txt: PASSED
+010-ones.txt: PASSED
+011-zeros.txt: PASSED
+020-first-strikes.txt: PASSED
+021-first-spares.txt: PASSED
+022-last-strikes.txt: PASSED
+023-last-spares.txt: PASSED
+024-all-strikes.txt: PASSED
+025-all-spares.txt: PASSED
+026-all-spares.txt: PASSED
+030-clears.txt: PASSED
+040-duplicate.txt: PASSED
+041-duplicate.txt: PASSED
+050-best-worst.txt: PASSED
+051-duplicate-best-worst.txt: PASSED
+052-max-min.txt: PASSED
+060-canvas1.txt: PASSED
+061-canvas2.txt: PASSED
+070-frame-9.txt: PASSED
 ```
+
+## Error Handling
 
 Lastly, error handling is not required in this lab, but if your program fails to read the input correctly, it may get stuck in an infinite loop.
 
