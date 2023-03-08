@@ -111,3 +111,26 @@ PASSED: 060-canvas1.txt
 PASSED: 061-canvas2.txt
 PASSED: 070-frame-9.txt
 ```
+
+Lastly, error handling is not required in this lab, but if your program fails to read the input correctly, it may get stuck in an infinite loop.
+
+If you add this piece to the end of your `while` loop, it will prevent this from happening and give you some kind of indication your program failed to parse my input correctly.
+
+```cpp
+  while (true) {
+    cout << "Enter player's name (done for no more players): ";
+    cin >> input_string;
+
+    if (input_string == "done") {
+      break;
+    }
+
+    // ... rest of the code
+
+    if (cin.fail()) {
+      throw runtime_error("Failed to match expected input.");
+    }
+  }
+```
+
+It should be okay to submit your code with this, just as usual, make sure it compiles on the lab machines before submitting.
