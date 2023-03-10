@@ -116,9 +116,9 @@ int get_player_score(const vector<int> &rolls) {
   for (size_t frame_number = 0; frame_number < NUMBER_OF_FRAMES - 1;
        ++frame_number) {
     // advice: use a lot of intermediate variables
-    const size_t current_frame = frame_number;
+    const size_t current_frame = frame_number * 2;
     const size_t next_frame = current_frame + 2;
-    const size_t next_next_frame = current_frame + 4; // this will still be in bounds on frame 9 because of roll 21
+    const size_t next_next_frame = next_frame + 2; // this will still be in bounds on frame 9 because of roll 21. 8 * 2 + 4 = 20
 
     const int roll1 = rolls[current_frame];
     const int roll2 = rolls[current_frame + 1];
